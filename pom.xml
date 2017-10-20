@@ -37,8 +37,8 @@
     </description>
     <scm>
         <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-testing-email.git</conncetion>
-        <developerConnection> scm:svn:https://svn.apache.org/repos/asf/sling/trunk/testing/email</developerConnection>
-        <url>https://gitbox.apache.org/repos/asf?p=sling-org-apache-sling-testing-email.git.git</url>
+        <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-testing-email.git</developerConnection>
+        <url>https://gitbox.apache.org/repos/asf?p=sling-org-apache-sling-testing-email.git</url>
     </scm>
     
     <build>
