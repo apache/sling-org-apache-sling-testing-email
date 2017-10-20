@@ -36,9 +36,9 @@
         Contains utilities that assist in validating email-enabled OSGi applications.
     </description>
     <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/sling/trunk/testing/email</connection>
+        <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-testing-email.git</conncetion>
         <developerConnection> scm:svn:https://svn.apache.org/repos/asf/sling/trunk/testing/email</developerConnection>
-        <url>http://svn.apache.org/viewvc/sling/trunk/testing/email</url>
+        <url>https://gitbox.apache.org/repos/asf?p=sling-org-apache-sling-testing-email.git.git</url>
     </scm>
     
     <build>
