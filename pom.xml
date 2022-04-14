@@ -22,43 +22,35 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.apache.sling</groupId>
-        <artifactId>sling</artifactId>
-        <version>30</version>
+        <artifactId>sling-bundle-parent</artifactId>
+        <version>47</version>
         <relativePath />
     </parent>
 
     <artifactId>org.apache.sling.testing.email</artifactId>
     <version>1.0.1-SNAPSHOT</version>
-    <packaging>bundle</packaging>
 
     <name>Apache Sling Testing Email Support</name>
     <description>
         Contains utilities that assist in validating email-enabled OSGi applications.
     </description>
+
+    <properties>
+        <project.build.outputTimestamp>1</project.build.outputTimestamp>
+    </properties>
+
     <scm>
         <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-testing-email.git</connection>
         <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-testing-email.git</developerConnection>
         <url>https://gitbox.apache.org/repos/asf?p=sling-org-apache-sling-testing-email.git</url>
+        <tag>HEAD</tag>
     </scm>
     
     <build>
         <plugins>
-             <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <instructions>
-                        <!--
-                            subetha-smpt and subetha-wiser are not OSGi bundles
-                            Since the potential for reuse inside the runtime is quite small,
-                            let bnd embed the needed packages inside this bundle
-                            
-                            Also embed the felix-utils JSON Writer
-                        -->
-                        <Conditional-Package>org.subethamail.*,org.apache.felix.utils.json</Conditional-Package>
-                    </instructions>
-                </configuration>
+            <plugin>
+                <groupId>biz.aQute.bnd</groupId>
+                <artifactId>bnd-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
